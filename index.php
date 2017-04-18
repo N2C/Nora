@@ -1,3 +1,3 @@
-<? include 'design/templates/header.php' ?>
+<?php include 'design/templates/header.php' ?>
 
 <p>It's work !</p>
