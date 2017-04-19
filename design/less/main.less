@@ -10,6 +10,8 @@
 @deep-orange-400:  #FF7043;
 @body-background: #fafafa;
 
+@text-card-color: #1d2129;
+
 body {
     padding-top: 50px;
     margin: 0;
@@ -62,4 +64,45 @@ header {
 }
 
 
+main{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/**
+ * FORMS
+ **/
+ input{
+     border-radius: 3px;
+     height: 30px;
+     width: 100%;
+     margin: 5px;
+     border: 0;
+     padding-left: 5px;
+ }
 
+
+/**
+ * CARD
+ **/
+
+.card{
+
+    background: white;
+    color: @text-card-color;
+    margin: 5px;
+    border-radius: 5px;
+    padding-left: 15px ;
+    padding-right:15px ;
+    padding-bottom:15px ;
+    padding-top: 5px;
+    .header{
+        text-align: center;
+
+    }
+
+
+}
+.card-orange{
+    background-color: @deep-orange-500;
+    color: white;
+}
