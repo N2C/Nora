@@ -22,5 +22,7 @@
 <body>
 
 <header>
-
+    <nav>
+        <div class="navbar-brand">NORA ♥</div>
+    </nav>
 </header>

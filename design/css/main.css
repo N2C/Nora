@@ -19,4 +19,13 @@ header {
     width: 100%;
     margin:0;
     background-color: #FF5722;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+
+header li {
+
 }
