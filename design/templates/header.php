@@ -24,6 +24,11 @@
 
 <header>
     <nav>
-        <div class="navbar-brand">NORA ♥</div>
+        <ul class="nav">
+            <li>Nora ! ♥</li>
+            <li><a href="/index.php">Accueil</a></li>
+        </ul>
     </nav>
 </header>
+
+<main>

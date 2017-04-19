@@ -7,9 +7,11 @@
 **/
 /** Constantes **/
 @deep-orange-500:  #FF5722;
+@deep-orange-400:  #FF7043;
 @body-background: #fafafa;
 
 body {
+    padding-top: 50px;
     margin: 0;
     background: @body-background;
 }
@@ -28,8 +30,36 @@ header {
     z-index: 1;
     position: fixed;
     top: 0;
+
+
+
+    .nav {
+        list-style: none;
+        float: left;
+        margin: 0;
+
+        li{
+            position: relative;
+            display: block;
+            float: left;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 15px;
+            height: 35px;
+
+            a {
+
+                text-decoration: none;
+                color: white;
+
+            }
+            &:hover {
+                background-color: @deep-orange-400;
+            }
+        }
+    }
+
 }
 
-header li {
 
-}
+
