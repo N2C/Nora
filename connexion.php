@@ -9,7 +9,7 @@
 
 ?>
 
-<div class="card card-orange" style="margin-left: 25%; margin-right: 25%; margin-top: 10%;">
+<div class="card card-teal" style="margin-left: 25%; margin-right: 25%; margin-top: 10%;">
     <h1 class="header">Connexion à Nora</h1>
     <form action="connexion.php" method="post">
         <input type="text" placeholder="Nom d'utilisateur"/><br />
