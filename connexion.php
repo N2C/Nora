@@ -7,13 +7,18 @@
  */
     include('design/templates/base.php');
 
+    if(isset($_POST['username'])|| isset($_POST['password'])){
+
+    }
+
+
 ?>
 
 <div class="card card-teal" style="margin-left: 25%; margin-right: 25%; margin-top: 10%;">
     <h1 class="header">Connexion à Nora</h1>
     <form action="connexion.php" method="post">
-        <input type="text" placeholder="Nom d'utilisateur"/><br />
-        <input type="password" placeholder="Mot de passe"/><br />
+        <input type="text" name="username" placeholder="Nom d'utilisateur"/><br />
+        <input type="password" name="password" placeholder="Mot de passe"/><br />
 
         <input type="submit">
     </form>
