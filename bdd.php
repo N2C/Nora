@@ -6,4 +6,4 @@
  * Time: 16:45
  */
 
-$bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', '');
+$bdd = new PDO('mysql:host=localhost;dbname=nora;charset=utf8', 'root', '');
