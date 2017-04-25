@@ -5,11 +5,11 @@
  * Date: 19/04/2017
  * Time: 21:19
  */
-    include('entity/user.php');
+    require('base.php');
     session_start();
 
     if(isset($_POST['username'])|| isset($_POST['password'])){
-        $bdd = new PDO('mysql:host=localhost;dbname=nora;charset=utf8', 'root', '');
+
         $req = $bdd->prepare('SELECT * FROM users WHERE username = ? AND password = ?');
         $req->execute(array($_POST['username'], md5($_POST['password']) ));
 
