@@ -15,7 +15,7 @@ include('/design/templates/base.php');
         <ul class="nav">
             <li>Nora ! ♥</li>
             <li><a href="/index.php">Accueil</a></li>
-
+            <li><?=$_SESSION['user']->getUsername()?></li>
         </ul>
     </nav>
 </header>

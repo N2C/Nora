@@ -27,6 +27,9 @@
             #redirection
             header('Location: index.php');
         }
+        else{
+            print('Bad credentials');
+        }
 
     }
 

@@ -1,5 +1,5 @@
 <?php
-
+require('base.php');
 require('design/templates/header.php');
 
 ?>
