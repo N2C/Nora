@@ -5,7 +5,7 @@
 //roro
 //roro2
 //nicolas5
-require 'design/templates/header.php';
+require('design/templates/header.php');
 
 ?>
 

@@ -7,7 +7,7 @@
  */
 
 #Chargement de l'entité user pour la gestion des utilisateurs
-include('entity/user.php');
+require('entity/user.php');
 #Initialisation des sessions
 session_start();
 #Connexion à la bdd
