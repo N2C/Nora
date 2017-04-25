@@ -5,7 +5,7 @@
 //roro
 //roro2
 //nicolas5
-include 'design/templates/header.php'
+require 'design/templates/header.php';
 
 ?>
 

@@ -15,6 +15,7 @@ include('base.php');
         <ul class="nav">
             <li>Nora ! ♥</li>
             <li><a href="/index.php">Accueil</a></li>
+
         </ul>
     </nav>
 </header>
