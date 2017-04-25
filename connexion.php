@@ -5,22 +5,22 @@
  * Date: 19/04/2017
  * Time: 21:19
  */
-
+    include('entity/user.php');
+    session_start();
 
     if(isset($_POST['username'])|| isset($_POST['password'])){
         $bdd = new PDO('mysql:host=localhost;dbname=nora;charset=utf8', 'root', '');
-        $req = $bdd->prepare('SELECT COUNT(*) FROM users WHERE username = ? AND password = ?');
+        $req = $bdd->prepare('SELECT * FROM users WHERE username = ? AND password = ?');
         $req->execute(array($_POST['username'], md5($_POST['password']) ));
 
-        $nb = $req->fetchColumn();
+        $user = $req->fetchObject(\entity\user::class);
 
-        if($nb == 1){
-            header('Location : /nora/index.php');
-            exit();
+        if( $user instanceof  \entity\user){
+            $_SESSION['user'] = $user;
+            header('Location: index.php');
         }
-        else{
-            $message = "Bad credentials";
-        }
+
+
 
 
     }
