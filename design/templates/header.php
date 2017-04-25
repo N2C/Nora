@@ -15,8 +15,11 @@ include('/design/templates/base.php');
         <ul class="nav">
             <li>Nora ! ♥</li>
             <li><a href="/index.php">Accueil</a></li>
-            <li><?=$_SESSION['user']->getUsername()?></li>
+        </ul>
+        <ul class="nav pull-right">
+            <li><?='Logging in as : '.$_SESSION['user']->getUsername()?></li>
+            <li><a href="/nora/deconnexion.php">Logout</a></li>
         </ul>
     </nav>
 </header>
-
+<main>

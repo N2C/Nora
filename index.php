@@ -1,5 +1,6 @@
 <?php
 require('base.php');
+if(empty($_SESSION['user'])) header('Location: connexion.php');
 require('design/templates/header.php');
 
 ?>
