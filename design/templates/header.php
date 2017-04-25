@@ -5,7 +5,7 @@
  * Date: 18/04/2017
  * Time: 22:18
  */
-include('base.php');
+include('/design/templates/base.php');
 ?>
 
 
