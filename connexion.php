@@ -6,24 +6,30 @@
  * Time: 21:19
  */
     require('base.php');
-    session_start();
 
+    #redirection si l'utilisateur est déjà connecté
+    if(isset($_SESSION['user']) || !empty($_SESSION['user'])) header('Location: index.php');
+
+    #traitement du formulaire
     if(isset($_POST['username'])|| isset($_POST['password'])){
 
+        #requete SQL
         $req = $bdd->prepare('SELECT * FROM users WHERE username = ? AND password = ?');
         $req->execute(array($_POST['username'], md5($_POST['password']) ));
 
+        #si l'entrée existe, elle sera retournée sous forme de d'objet
         $user = $req->fetchObject(\entity\user::class);
 
+        #si la connexion s'est bien déroulée
         if( $user instanceof  \entity\user){
+            #enregistrement de la session
             $_SESSION['user'] = $user;
+            #redirection
             header('Location: index.php');
         }
 
-
-
-
     }
+
 
 include('design/templates/base.php');
 
