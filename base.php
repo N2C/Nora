@@ -6,4 +6,9 @@
  * Time: 16:45
  */
 
+#Chargement de l'entité user pour la gestion des utilisateurs
+require('entity/user.php');
+#Initialisation des sessions
+session_start();
+#Connexion à la bdd
 $bdd = new PDO('mysql:host=localhost;dbname=nora;charset=utf8', 'root', '');

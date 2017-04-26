@@ -1,9 +1,7 @@
 <?php
-//ophelie2
-//nicolas
-//nicolas 5
-//girodengo1
-include 'design/templates/header.php'
+require('base.php');
+if(empty($_SESSION['user'])) header('Location: connexion.php');
+require('design/templates/header.php');
 
 ?>
 

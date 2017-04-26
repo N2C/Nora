@@ -5,7 +5,7 @@
  * Date: 18/04/2017
  * Time: 22:18
  */
-include('base.php');
+include('/design/templates/base.php');
 ?>
 
 
@@ -16,6 +16,10 @@ include('base.php');
             <li>Nora ! ♥</li>
             <li><a href="/index.php">Accueil</a></li>
         </ul>
+        <ul class="nav pull-right">
+            <li><?='Logging in as : '.$_SESSION['user']->getUsername()?></li>
+            <li><a href="/nora/deconnexion.php">Logout</a></li>
+        </ul>
     </nav>
 </header>
-
+<main>
