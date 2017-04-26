@@ -14,12 +14,12 @@ include(__DIR__.'/base.php');
     <nav>
         <ul class="nav">
             <li>Nora ! ♥</li>
-            <li><a href="/nora/index.php">Accueil</a></li>
-            <li><a href="/nora/fiches/">Fiches</a></li>
+            <li><a href="/nora/index.php"><i class="fa fa-home"></i> Accueil</a></li>
+            <li><a href="/nora/fiches/"><i class="fa fa-folder"></i> Fiches</a></li>
         </ul>
         <ul class="nav pull-right">
-            <li><?='Logging in as : '.$_SESSION['user']->getUsername()?></li>
-            <li><a href="/nora/deconnexion.php">Logout</a></li>
+            <li><i class="fa fa-user"></i> <?=$_SESSION['user']->getUsername()?></li>
+            <li><a href="/nora/deconnexion.php"><i class="fa fa-sign-out"></i> Déconnexion</a></li>
         </ul>
     </nav>
 </header>

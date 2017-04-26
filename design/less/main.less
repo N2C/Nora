@@ -5,6 +5,10 @@
     font-family: Robot, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 /**
 * DESIGN GENERAL
 **/
@@ -22,6 +26,7 @@ body {
     padding-top: 60px;
     margin: 0;
     background: @body-background;
+    display: flex;
 }
 
 /**
@@ -55,15 +60,19 @@ header {
             padding-top: 15px;
             height: 35px;
 
-            a {
-
-                text-decoration: none;
-                color: white;
-
-            }
             &:hover {
                 background-color: @navbar-bg-color-hover;
             }
+            -webkit-transition-duration: .100s;
+            transition-duration: .200s;
+            -webkit-transition-property: background,opacity,-webkit-box-shadow,-webkit-transform;
+            transition-property: background,opacity,box-shadow,transform;
+            -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+        }
+
+        a {
+            color: white;
         }
 
         &.pull-right{
@@ -74,6 +83,10 @@ header {
 
 }
 
+.menu-left {
+    float: left;
+    width: 150px;
+}
 
 main{
     margin-left: 50px;
@@ -100,18 +113,56 @@ main{
 
     background: white;
     color: @text-card-color;
-    margin: 5px;
+    margin: 15px;
     border-radius: 5px;
-    padding-left: 15px ;
-    padding-right:15px ;
-    padding-bottom:15px ;
-    padding-top: 5px;
+
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+    min-width: 100%;
     .header{
         text-align: center;
-
+        padding: 15px;
+        .pull-right{
+            float: right;
+        }
     }
 
+
+
+
+    .body {
+        padding:10px;
+    }
+
+    .footer {
+        background: @navbar-bg-color;
+        color: white;
+        text-align: center;
+        height: auto;
+        padding: 1px;
+
+        ul li {
+            display: inline;
+        }
+    }
+
+    hr {
+        margin-top: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0,0,0,.1);
+    }
+
+    &.hoverable{
+        -webkit-transition-duration: .218s;
+        transition-duration: .218s;
+        -webkit-transition-property: background,opacity,-webkit-box-shadow,-webkit-transform;
+        transition-property: background,opacity,box-shadow,transform;
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+
+        &:hover {
+            box-shadow:0 2px 15px rgba(0,0,0,0.30);
+        }
+    }
 
 }
 .card-orange{
