@@ -8,6 +8,7 @@
     <link rel="stylesheet/less" type="text/css" href="/nora/design/less/main.less">
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://use.fontawesome.com/e414b65b35.js"></script>
     <title>Nora Project</title>
 </head>
 <body>
