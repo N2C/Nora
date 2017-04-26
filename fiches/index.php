@@ -5,9 +5,9 @@
  * Date: 18/04/2017
  * Time: 22:02
  */
-
-include('../design/templates/header.php');
-
+require(__DIR__.'/../base.php');
+if(empty($_SESSION['user'])) header('Location: '.__DIR__.'/../connexion.php');
+require(__DIR__.'/../design/templates/header.php');
 ?>
 <h1>Dernières fiches</h1>
 

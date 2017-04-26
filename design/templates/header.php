@@ -5,7 +5,7 @@
  * Date: 18/04/2017
  * Time: 22:18
  */
-include('/design/templates/base.php');
+include(__DIR__.'/base.php');
 ?>
 
 
@@ -14,7 +14,8 @@ include('/design/templates/base.php');
     <nav>
         <ul class="nav">
             <li>Nora ! ♥</li>
-            <li><a href="/index.php">Accueil</a></li>
+            <li><a href="/nora/index.php">Accueil</a></li>
+            <li><a href="/nora/fiches/">Fiches</a></li>
         </ul>
         <ul class="nav pull-right">
             <li><?='Logging in as : '.$_SESSION['user']->getUsername()?></li>
