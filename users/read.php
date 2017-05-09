@@ -5,6 +5,9 @@
  * Date: 26/04/2017
  * Time: 23:04
  */
+require(__DIR__.'/../base.php');
+if(empty($_SESSION['user'])) header('Location: '.__DIR__.'/../connexion.php');
+
 
 ?>
 <!DOCTYPE html>
@@ -18,7 +21,7 @@
 
         // on affiche les informations de l'user connecté ?
         $query = $bdd-> query("SELECT * FROM `users` ");
-
+//<form if echo >
 
         // si on est un employé
         if($_SESSION['user']->getStatut()==0) {
